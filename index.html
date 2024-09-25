@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task" required>
+            <input type="number" id="task-time" placeholder="Time" required>
+            <select id="time-unit">
+                <option value="minutes">Minutes</option>
+                <option value="hours">Hours</option>
+                <option value="days">Days</option>
+                <option value="weeks">Weeks</option>
+                <option value="months">Months</option>
+            </select>
+            <select id="task-type">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="personal">Study</option>
+                <option value="personal">Coding</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <button id="delete-all-btn">Delete All</button>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="srcipt.js"></script>
+</body>
+</html>
